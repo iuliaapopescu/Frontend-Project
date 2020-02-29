@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #1c1c1c;
+    --sec-color: #bababa;
+    --main-font: Quicksand;
+    --sec-font: Baskervville;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+#up, #down {
+    filter: invert(1) hue-rotate(180deg);
+    position: absolute;
+    z-index: 1;
+}
+
+#down {
+    bottom: -5vh;
+    right: 1vw;
+    margin-bottom: 2vh;
+}
+
+#up {
+    top: -5vh;
+    right: 1vw;
+}
+
+/* Progress-bar properties */
+
+.progress-bar {
+    position: relative;
+    padding: 10px 0;
+}
+
+.progress {
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    border-bottom: 2px solid var(--sec-color);
+    z-index: -1;
+}
+
+.step-content div {
+    position: absolute;
+    opacity: 0;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.step {
+    height: 25px;
+    width: 25px;
+    background-color: var(--main-color);
+    border: 2px solid var(--sec-color);
+    border-radius: 50%;
+}
+
+.pic {
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.step-content0 {
+    font-style: italic;
+    color: var(--sec-color);
+    font-family: var(--main-font);
+    text-align: center;
+    display: inline-block;
+    margin: 0 38%;
+}
+
+.pic img {
+    object-fit: contain;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 20%;
+}
+
+.step-content1 img{ left: 0; }
+
+.step-content2 img { left: 20%; }
+
+.step-content3 img { left: 40%; }
+
+.step-content4 img { left: 60%; }
+
+.step-content5 img { left: 80%; }
+
+@keyframes slideIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Progress-bar properties */
+
+/* Main section properties */
+
+main {
+    position: absolute;
+    top: 30vh;
+}
+
+main div {
+    float: left;
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.panel1, .panel2, .panel6, .panel7 {
+    width: 50%;
+    height: 500px;
+}
+
+.panel3, .panel4, .panel5, .panel8, .panel9, .panel10 {
+    width: 33.333%;
+    height: 500px;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+
+main div:hover img{
+    opacity: .4;
+    transition: .5s ease;
+}
+
+main div:hover p {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+main p {
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 75%;
+    color: var(--sec-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    text-align: center;
+}
+
+main div:nth-of-type(2n){
+    padding: 30px;
+    transition: .5s ease;
+}
+
+main div:nth-of-type(2n):hover,
+main div:nth-of-type(2n + 1):hover {
+    padding: 0;
+    transition: .5s ease;
+}
+
+main div:nth-of-type(2n + 1){
+    padding: 20px;
+    transition: .5s ease;
+}
+
+/* Main section properties */

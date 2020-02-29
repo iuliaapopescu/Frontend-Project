@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #1c1c1c;
+    --sec-color: #bababa;
+    --faded-sec-color: #bababa20;
+    --main-font: Quicksand;
+    --sec-font: Baskervville;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.new-post {
+    position: absolute;
+    top: 12.5vh;
+    width: 50%;
+    left: 72%;
+    transform: translateX(-50%);
+    box-shadow: 3px 3px 15px 1px var(--faded-sec-color),
+                -3px -3px 15px 1px var(--faded-sec-color);
+    margin-bottom: 30px;
+    }
+
+.new-post p {
+    font-family: Assistant;
+    color: var(--sec-color);
+    font-weight: bold;
+    padding: 0 15px 15px 15px;
+    word-wrap: break-word;
+}
+
+.short-info {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: 500px;
+}
+
+.photo img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%; 
+    width: 100%;
+    padding: 15px 15px 5px 15px;
+}
+
+.date {
+    color: white;
+    font-family: var(--main-font);
+}
+
+.message {
+    position: absolute;
+    top: 50vh;
+    left: 75%;
+    transform: translateX(-50%);
+    color: var(--sec-color);
+    font-family: var(--main-font);
+    font-style: italic;
+    font-size: 20px;
+}

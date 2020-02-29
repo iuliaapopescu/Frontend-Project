@@ -1,0 +1,73 @@
+#front {
+    width: 45vw;
+    position: relative;
+}
+
+.description {
+    position: absolute;
+    height: 80vh;
+    width: 17vw;
+    right: 4vw;
+    top: 2.5vh;
+    color: var(--sec-color);
+    font-family: var(--sec-font);
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.description::before {
+    content: '';
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-top: 2px solid var(--sec-color);
+    border-left: 2px solid var(--sec-color);
+    position: absolute;
+    top: 0;
+    left: -5%;
+}
+
+.description::after {
+    content: '';
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-right: 2px solid var(--sec-color);
+    border-bottom: 2px solid var(--sec-color);
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+}
+
+.main-photo {
+    height: 80vh;
+    width: 20vw;
+    float: left;
+    position: absolute;
+    left: 2vw;
+    top: 2.5vh;
+    animation: slide 1.5s ease-in-out 0s alternate 1 none running;
+}
+
+.main-photo img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

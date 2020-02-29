@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #1c1c1c;
+    --sec-color: #bababa;
+    --faded-sec-color: #bababa20;
+    --main-font: Quicksand;
+    --sec-font: Baskervville;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+#logo {
+    position: absolute;
+    top: 7vh;
+    left: 1.4vw;
+    height: 6vh;
+}
+
+#new-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 35vh;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 45%;
+}
+
+input[type="text"], textarea {
+    margin: 5px;
+    padding: 3px;
+    font-style: italic;
+    font-family: var(--main-font);
+    color: var(--sec-color);
+    background-color: transparent;
+    border: 1px solid var(--sec-color);
+}
+
+input[type="text"]:hover, 
+input[type="password"]:hover {
+    color: white;
+    background-color: var(--faded-sec-color);
+}
+
+#submit {
+    align-self: center;
+    font-family: var(--main-font);
+    color: var(--sec-color);
+    background-color: transparent;
+    border: 1px solid var(--sec-color);
+    padding: 3px;
+}
+
+.welcome, #logout {
+    color: var(--sec-color);
+    font-family: var(--main-font);
+    font-size: 18px;
+    position: absolute;
+    left: 2vw;
+}
+
+.welcome {
+    bottom: 4vh;
+}
+
+#logout {
+    bottom: 1vh;
+}
+
+#new-post-bttn{
+    position: absolute;
+    color: var(--sec-color);
+    font-family: var(--main-font);
+    text-decoration: none;
+    border: 1px solid var(--sec-color);
+    padding: 5px;
+    border-radius: 3px;
+    top: 94vh;
+    left: 15vw;
+}
+
+#new-post-bttn:hover {
+    color: var(--main-color);
+    background-color: var(--sec-color);
+    font-weight: bold;
+}
+
+.message {
+    position: absolute;
+    top: 50vh;
+    left: 75%;
+    transform: translateX(-50%);
+    color: var(--sec-color);
+    font-family: var(--main-font);
+    font-style: italic;
+    font-size: 20px;
+}
