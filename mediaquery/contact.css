@@ -1,0 +1,179 @@
+@media (max-width: 1024px) and (orientation: portrait) {
+    table {
+        left: 6.5vw;
+    }
+
+    td {
+        width: 12.5vw;
+        height: 15.2vh;
+    }
+
+    .hours li {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .months {
+        width: 5vw;
+        font-size: 25px;
+    }
+
+    .up-bttn, .down-bttn {
+        right: 1.5vw;
+    }
+
+    #googleMap {
+        top: 120vh;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #info input[type="text"] {
+        width: 25vw;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    #info label {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hours li {
+        padding: 0px;
+        font-size: 17px;
+    }
+
+    .months {
+        font-size: 20px;
+    }
+
+    #googleMap {
+        top: 125vh;
+    }
+}
+
+@media (max-width: 414px) {
+    .nav-links li a {
+        font-size: 25px
+    }
+
+    table, .months {
+        display: none;
+    }
+
+    .up-bttn, .down-bttn {
+        visibility: hidden;
+    }
+
+    #info {
+        top: 13vh;
+    }
+
+    #info input {
+        margin-top: 5vh;
+    }
+
+    #left, #right {
+        text-align: center;
+    }
+
+    #info input[type="text"] {
+        width: 80vw;
+        padding: 5px;
+    }
+
+    #googleMap {
+        top: 105vh;
+        width: 90vw;
+        left: 5vw;
+    }
+}
+
+@media (max-width: 375px) and (min-aspect-ratio: 1/2) {
+    #info input {
+        margin-top: 4vh;
+    }
+}
+
+@media (max-width: 320px) {
+    #info input {
+        margin: 2vh;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    #googleMap {
+        top: 115vh;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+    table, .months {
+        display: none;
+    }
+
+    .up-bttn, .down-bttn {
+        visibility: hidden;
+    }
+
+    #info {
+        top: 20vh;
+        width: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 60vh;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left {
+        position: absolute;
+        left: 0;
+        top: 10vh;
+    }
+    
+    #right {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #info input[type="text"] {
+        width: 25vw;
+        height: 11vh;
+        font-size: 17px;
+    }
+
+    #info input[type="submit"] {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nav-links li:first-of-type {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+    .nav-links li:first-of-type {
+        padding: 20px 0px 20px 40px;
+    }
+}

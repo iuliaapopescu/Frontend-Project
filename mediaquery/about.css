@@ -1,0 +1,111 @@
+@media (max-width: 1024px) {
+    .aside {
+        width: 50vw;
+    }
+
+    .resume {
+        width: 50vw;
+    }
+
+    .resume h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .resume p {
+        font-size: 22px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    .nav-links li a {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aside {
+        width: 100%;
+        top: 15%;
+    }
+
+    .resume {
+        top: 35vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    h1 {
+        font-size: 17px;
+    }
+
+    .resume h1 {
+        font-size: 17px;
+        width: 90vw;
+        transform: translateX(10%);
+        font-weight: bolder;
+    }
+
+    .resume p {
+        width: 90vw;
+        transform: translateX(10%);
+    }
+
+    .background-img {
+        height: 130vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .resume {
+        top: 40vh;
+    }
+
+    .resume p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .resume {
+        top: 45vh;
+    }
+
+    .background-img {
+        height: 140vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 812px) and (orientation: landscape) {
+    .aside {
+        top: 10vh;
+    }
+
+    .resume {
+        top: 25vh;
+    }
+
+    .nav-links li{
+        padding: 5px 0;
+    }
+
+    .nav-links li a{
+        font-size: 14px;
+    }
+
+    .aside h1, .resume h1, .resume p {
+        font-size: 11px;
+    }
+
+    .resume h1 {
+        font-weight: bolder;
+    }
+
+    .resume h1, p{
+        width: 100vw;
+        transform: translateX(0%);
+    }
+}

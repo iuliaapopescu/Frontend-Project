@@ -1,0 +1,161 @@
+/* iPad Pro */
+@media (max-width: 1024px) {
+    #front {
+        width: 100vw;
+    }
+
+    .main-photo {
+        top: 16vh;
+        height: 80vh;
+        width: 50vw;
+    }
+
+    .description {
+        top: 16vh;
+        height: 80vh;
+        width: 40vw;
+        font-size: 29px;
+        right: 5vw;
+    }
+
+    .new-post {
+        top: 100vh;
+        width: 95vw;
+        transform: translateX(-73%);
+    }
+
+    .short-info {
+        font-size: 25px;
+    }
+
+    .text, .date {
+        font-size: 23px;
+    }
+
+    .nav-links li a {
+        font-size: 40px;
+    }
+}
+
+/* iPad */
+@media (max-width: 768px) {
+    .description {
+        font-size: 22px;
+    }
+
+    .nav-links li a {
+        font-size: 30px;
+    }
+}
+
+/* iPhone 6/7/8 Plus */
+@media (max-width: 414px) {
+    .text, .date {
+        font-size: 18px;
+    }
+
+    .main-photo {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .description {
+        top: calc(100vh + 1px);
+        height: 90vh;
+        width: 80vw;
+        margin: 0 5vw;
+        padding: 5px;
+        font-size: 21px;
+    }
+
+    .new-post {
+        top: 195vh;
+    }
+}
+
+/* iPhone X */
+@media (max-width: 375px) {
+    .description {
+        font-size: 21px;
+    }
+}
+
+/*  iPhone 6/7/8 */
+@media (max-width: 375px) and (min-aspect-ratio: 1/2) {
+    .description {
+        font-size: 18px;
+    }
+}
+
+/* iPhone 5 */
+@media (max-width: 320px) {
+    .description {
+        top: 100vh;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 1366px) and (orientation: landscape) {
+    .main-photo, .description {
+        top: 7vh;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .nav-links li a {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+    .main-photo {
+        height: 70vh;
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .main-photo img {
+        object-position: 50% 30%;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+    }
+
+    .new-post {
+        top: 210vh;
+    }
+
+    .description {
+        top: 90vh;
+        width: 80vw;
+        height: 90vh;
+        margin: 0 5vw;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+    .description {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
+    .nav-links li a {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .main-photo {
+        height: 70vh;
+    }
+}

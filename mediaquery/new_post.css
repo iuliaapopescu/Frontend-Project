@@ -1,0 +1,216 @@
+@media (max-width: 1024px) {
+    .nav-links {
+        top: 5vh;
+    }
+
+    .nav-links li a {
+        font-size: 40px;
+    }
+
+    .main-photo {
+        top: 10vh;
+        width: 50vw;
+    }
+
+    .description {
+        top: 10vh;
+        width: 40vw;
+        left: 55vw;
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    #new-post {
+        top: 100vh;
+        left: 50vw;
+        width: 80vw;
+        margin-bottom: 5vh;
+    }
+
+    #new-post input, textarea {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .welcome {
+        top: 92vh;
+        font-size: 20px;
+    }
+
+    #logout {
+        top: 94vh;
+        font-size: 20px;
+    }
+
+    #new-post-bttn {
+        top: 92vh;
+        font-size: 20px;
+        left: 39vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .description {
+        font-size: 22px;
+    }
+
+    #new-post-bttn {
+        left: 34vw;
+    }
+
+    .burger-menu {
+        top: 2vh;
+    }
+}
+
+@media (max-width: 414px) {
+    .nav-links {
+        top: 10vh;
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+    }
+
+    .burger-menu {
+        top: 3vh;
+    }
+
+    .main-photo {
+        height: 75vh;
+        width: 90vw;
+        top: 17vh;
+        left: 5vw;
+    }
+
+    .description {
+        top: 105vh;
+        left: 5vw;
+        height: 90vh;
+        width: 80vw;
+        margin: 0 5vw;
+        padding: 5px;
+        font-size: 21px;
+    }
+
+    .welcome {
+        top: 93vh;
+        left: 5vw;
+        font-size: 20px;
+    }
+
+    #logout {
+        left: 5vw;
+        top: 96vh;
+        font-size: 20px;
+    }
+
+    #new-post-bttn {
+        left: 65vw;
+        top: 94vh;
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    #new-post {
+        top: 200vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .description {
+        font-size: 18px;
+    }
+
+    #new-post-bttn {
+        left: 62vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .description,
+    .welcome,
+    #logout,
+    #new-post-bttn,
+    #new-post input,
+    #new-post textarea {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) and (max-aspect-ratio: 7/15) {
+    .description {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1366px) and (orientation: landscape) {
+    .main-photo, .description {
+        top: 7vh;
+    }
+}
+
+@media (max-width: 818px) and (orientation: landscape) {
+    .main-photo {
+        width: 90vw;
+        left: 5vw;
+        height: 70vh;
+    }
+
+    .main-photo img {
+        object-position: 50% 30%;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+    }
+
+    .description {
+        top: 100vh;
+        left: 5vw;
+        width: 80vw;
+        height: 90vh;
+        margin: 0 5vw;
+        font-size: 20px;
+    }
+
+    .welcome, 
+    #new-post-bttn,
+    #logout {
+        font-size: 17px;
+    }
+
+    .welcome, #new-post-bttn {
+        top: 100vh;
+    }
+
+    #logout {
+        top: 105vh;
+
+    }
+
+    .welcome, #logout {
+        left: 5vw;
+    }
+
+    #new-post-bttn {
+        left: 30vw;
+        padding: 5px;
+    }
+
+    #new-post {
+        top: 220vh;
+    }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+    .description {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
+    .description {
+        font-size: 15px;
+    }
+}
