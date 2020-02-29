@@ -1,0 +1,42 @@
+<ul class="hours">
+    <li>
+        12:00
+        <% if(locals.user) { %>
+            <% if(locals.schedule.months[month].days[Day - 1].meetings[0].busy == true) { %>
+                <%= locals.schedule.months[month].days[Day - 1].meetings[0].client.name %>
+            <% } %>
+        <% } else if(locals.schedule.months[month].days[Day - 1].meetings[0].busy == true) { %>
+            Busy
+        <% } %>
+    </li>
+    <li>
+        14:00
+        <% if(locals.user) { %>
+            <% if(locals.schedule.months[month].days[Day - 1].meetings[1].busy == true) { %>
+                <%= locals.schedule.months[month].days[Day - 1].meetings[1].client.name %>
+            <% } %>
+        <% } else if(locals.schedule.months[month].days[Day - 1].meetings[1].busy == true) { %>
+            Busy
+        <% } %>
+    </li>
+    <li>
+        16:00
+        <% if(locals.user) { %>
+            <% if(locals.schedule.months[month].days[Day - 1].meetings[2].busy == true) { %>
+                <%= locals.schedule.months[month].days[Day - 1].meetings[2].client.name %>
+            <% } %>
+        <% } else if(locals.schedule.months[month].days[Day - 1].meetings[2].busy == true) { %>
+            Busy
+        <% } %>
+    </li>
+    <li>
+        18:00
+        <% if(locals.user) { %>
+            <% if(locals.schedule.months[month].days[Day - 1].meetings[3].busy == true) { %>
+                <%= locals.schedule.months[month].days[Day - 1].meetings[3].client.name %>
+            <% } %>
+        <% } else if(locals.schedule.months[month].days[Day - 1].meetings[3].busy == true) { %>
+            Busy
+        <% } %>
+    </li>
+</ul>

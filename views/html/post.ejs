@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="/uploads/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/header.css" type="text/css">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/post.css" type="text/css">
+    <link rel="stylesheet" href="/mediaquery/post.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Assistant|Baskevville&display=swap" rel="stylesheet">
+
+    <title>Post</title>
+</head>
+<body>
+    <header>
+        <%- include("../partials/header") %>
+    </header>
+
+    <main>
+        
+        <div id="front">
+            <%- include("../partials/main") %>
+        </div>
+        
+        <% if(locals.posts) { %>
+        <div class="new-post">
+            <div class="photo">
+                <img src="<%= posts[id].link %>" alt="link does not exist">
+            </div>
+            <p class="short-info">
+                <%= posts[id].description %>
+            </p>
+            <p class="text">
+                <%= posts[id].text %>
+            </p>
+            <p class="date">
+                <%= posts[id].date %>
+            </p>
+        </div>
+        <% } else { %>
+            <p class="message">Post is unavailable or may have been deleted.</p>
+        <% } %>
+    </main>
+
+    <script src="/js/header.js"></script>
+</body>
+</html>

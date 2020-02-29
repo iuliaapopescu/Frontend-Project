@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="/uploads/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/new_post.css">
+    <link rel="stylesheet" href="/css/header.css" type="text/css">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/mediaquery/new_post.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Assistant|Baskevville&display=swap" rel="stylesheet">
+
+    <title>Make new post</title>
+</head>
+<body>
+    <header>
+        <%- include("../partials/header") %>
+    </header>
+
+    <main>
+
+        <div id="front">
+            <%- include("../partials/main") %>
+        </div>
+
+        <% if(locals.user) { %>
+            <p class="welcome">
+                Welcome, <%= user.username %>
+            </p>
+        <% } %>
+
+        <% if(locals.user){ %>
+            <a href="/logout" id="logout">Logout</a>
+        <% } %>
+
+        <% if(locals.user){ %>
+            <a href="/new_post" id="new-post-bttn">Create a post</a>
+        <% } %>
+
+        <% if(!locals.rsstatus) { %>
+        <form id="new-post" method="POST">
+            <input type="text" name="link" placeholder="Enter URL for your image">
+            <input type="text" name="description" placeholder="Add a short description">
+            <textarea rows="10" cols="70" name="text">Enter text</textarea>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <% } else if(rsstatus == "ok") { %>
+            <p class="message">Your post was uploaded!</p>
+        <% } else { %>
+            <p class="message">Error</p>
+        <% } %>
+    </main>
+    
+    <script src="/js/header.js"></script>
+</body>
+</html>
